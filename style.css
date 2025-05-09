@@ -38,7 +38,7 @@ a:hover {
 /* 4. Header */
 header {  
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: flex-start; /* align items to the left */
   flex-direction: row; /* change from column to row */
   background: var(--primary);
