@@ -37,16 +37,17 @@ a:hover {
 }
 
 /* 4. Header */
-header {
-  display: flex;                /* Flex centering */ 
-  flex-direction: column;
+header {  
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* align items to the left */
+  flex-direction: row; /* change from column to row */
   background: var(--primary);
   color: white;
   padding: calc(var(--gap) * 2);
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  gap: 1.5rem;
 }
 header h1 {
   font-family: var(--font-heading);
