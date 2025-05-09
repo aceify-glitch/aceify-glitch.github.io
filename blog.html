@@ -1,119 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blog</title>
-  <style>
-    body {
-      font-family: Arial;
-      background-color: black;
-      padding: 20px;
-      color:whitesmoke
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: black;
+            padding: 20px;
+            color: whitesmoke;
+        }
 
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
 
-    .post {
-      background-color: black;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 5px;
-      color: whitesmoke
-    }
+        .post {
+            background-color: black;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: whitesmoke;
+        }
 
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      color: whitesmoke;
-    }
-    .rgb-header{
-  animation: rgb-glow 5s linear infinite;
-  background-size:300%,300%;
-  background-image:linear-gradient(
-    45deg,
-    #4b0082,  /* indigo */
-    #2c3e50,  /* dark blue-gray */
-    #34495e,  /* dark slate */
-    #1abc9c,  /* dark aqua */
-    #16a085,  /* teal */
-    #9b59b6,  /* muted purple */
-    #8e44ad,  /* deep violet */
-    #4b0082   /* back to indigo **/
-  );
-  color:white;
-}
-@keyframes rgb-glow{
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-footer {
-  margin-top: 3rem;
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #121212;
-  border-top: 1px solid #333;
-  color: #bbb;
-  font-size: 0.9rem;
-}
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: whitesmoke;
+        }
 
-footer a {
-  color: #5c6bc0;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
+        .rgb-header {
+            animation: rgb-glow 5s linear infinite;
+            background-size: 300%, 300%;
+            background-image: linear-gradient(
+                45deg,
+                #4b0082,  /* indigo */
+                #2c3e50,  /* dark blue-gray */
+                #34495e,  /* dark slate */
+                #1abc9c,  /* dark aqua */
+                #16a085,  /* teal */
+                #9b59b6,  /* muted purple */
+                #8e44ad,  /* deep violet */
+                #4b0082   /* back to indigo **/
+            );
+            color: white;
+        }
 
-footer a:hover {
-  color: #ff4081;
-}
+        @keyframes rgb-glow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-  </style>
+        footer {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #121212;
+            border-top: 1px solid #333;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #5c6bc0;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff4081;
+        }
+
+        details {
+            margin-top: 20px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .post-content {
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+    </style>
 </head>
-
 <body>
 
-  <!-- Blog Header -->
-  <header class="rgb-header">
+<!-- Blog Header -->
+<header class="rgb-header">
     <h1>Welcome to My Blog</h1>
     <p>By Ace</p>
-  </header>
+</header>
 
-  <!-- Blog Post 1 -->
-  <div class="post">
-    <h2>My First Post</h2>
-    <p><strong>Date:</strong> May 9, 2025</p>
-    <p>Hey! This is my first blog post. I'm learning HTML and it's super cool so far 😎.</p>
-  </div>
+<!-- Blog Post 1 -->
+<div class="post">
+    <details>
+        <summary>My First Post</summary>
+        <div class="post-content">
+            <p><strong>Date:</strong> May 9, 2025</p>
+            <p>Hey! This is my first blog post. I'm learning HTML and it's super cool so far 😎.</p>
+        </div>
+    </details>
+</div>
 
-  <!-- Blog Post 2 -->
-  <div class="post">
-    <h2>Another Cool Thing</h2>
-    <p><strong>Date:</strong> May 8, 2025</p>
-    <p>Today I learned how to use CSS to make my blog look better. It’s fun!</p>
-  </div>
+<!-- Blog Post 2 -->
+<div class="post">
+    <details>
+        <summary>Another Cool Thing</summary>
+        <div class="post-content">
+            <p><strong>Date:</strong> May 8, 2025</p>
+            <p>Today I learned how to use CSS to make my blog look better. It’s fun!</p>
+        </div>
+    </details>
+</div>
 
-  <!--Blog Post 3-->
-  <div class="post">
-<h2> Testing!</h2>
-<p><strong>Date:</strong>May 9, 2025</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia nulla neque voluptatum earum a dolore expedita repudiandae officiis cupiditate eligendi deserunt, nobis, nisi aliquid, dolor eveniet exercitationem incidunt debitis odit dolorum at. Numquam in dolorum aliquam similique facere non architecto sit odio vero delectus, distinctio corporis aspernatur ipsa rem.</p>
+<!-- Blog Post 3 -->
+<div class="post">
+    <details>
+        <summary>Testing!</summary>
+        <div class="post-content">
+            <p><strong>Date:</strong> May 9, 2025</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia nulla neque voluptatum earum a dolore expedita repudiandae officiis cupiditate eligendi deserunt, nobis, nisi aliquid, dolor eveniet exercitationem incidunt debitis odit dolorum at. Numquam in dolorum aliquam similique facere non architecto sit odio vero delectus, distinctio corporis aspernatur ipsa rem.</p>
+        </div>
+    </details>
+</div>
 
-  </div>
-
-  <!-- Footer -->
-  <footer>
-      <p>© 2025 Ace — Built with 💻 and ☕</p>
-  <p>
-    <a href="mailto:mrunalrout@gmail.com">Email</a> |
-    <a href="https://github.com/aceify-glitch" target="_blank">GitHub</a> |
-    <a href="https://youtube.com/@swenify" target="_blank">YouTube</a>
-  </p>
+<!-- Footer -->
+<footer>
+    <p>© 2025 Ace — Built with 💻 and ☕</p>
+    <p>
+        <a href="mailto:mrunalrout@gmail.com">Email</a> |
+        <a href="https://github.com/aceify-glitch" target="_blank">GitHub</a> |
+        <a href="https://youtube.com/@swenify" target="_blank">YouTube</a>
+    </p>
 </footer>
-  </footer>
 
 </body>
 </html>
