@@ -1,10 +1,11 @@
+/* 1. Thhttps://codeshare.io/eme Variables */
 :root {
   --bg: black;
-  --card-bg: black;
+  --card-bg: #1a1717;
   --primary: #3f51b5;
   --secondary: #5c6bc0;
   --text: white;
-  --accent: #ff4081;
+  --accent: #9b59b6;
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
   --gap: 1.5rem;
@@ -25,6 +26,8 @@ body {
   color: var(--text);
   line-height: 1.6;
   padding: var(--gap);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 a {
   color: var(--primary);
@@ -39,10 +42,10 @@ a:hover {
 header {  
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* align items to the left */
+  justify-content: center; /* align items to the left */
+  text-align:center;
   flex-direction: row; /* change from column to row */
   background: var(--primary);
-  color: white;
   padding: calc(var(--gap) * 2);
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -50,12 +53,14 @@ header {
 }
 header h1 {
   font-family: var(--font-heading);
+  color: whitesmoke;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 header p {
   font-size: 1.1rem;
   opacity: 0.9;
+  color:aqua; 
 }
 
 /* 5. Section Cards */
@@ -72,6 +77,7 @@ section h2 {
   margin-bottom: 1rem;
   border-left: 4px solid var(--accent);
   padding-left: 0.5rem;
+  color:purple;
 }
 
 /* 6. Skills & Projects Grid */
@@ -101,13 +107,6 @@ section h2 {
   margin-bottom: 0.5rem;
   color: var(--secondary);
 }
-
-/* 7. Contact Links */
-#contact p {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
 /* 8. Responsive Breakpoints */
 @media (max-width: 768px) {       /* Tablet */ 
   #skills li,
@@ -127,3 +126,44 @@ section h2 {
     font-size: 1.5rem;
   }
 } 
+.rgb-header{
+  animation: rgb-glow 5s linear infinite;
+  background-size:300%,300%;
+  background-image:linear-gradient(
+    45deg,
+    #4b0082,  /* indigo */
+    #2c3e50,  /* dark blue-gray */
+    #34495e,  /* dark slate */
+    #1abc9c,  /* dark aqua */
+    #16a085,  /* teal */
+    #9b59b6,  /* muted purple */
+    #8e44ad,  /* deep violet */
+    #4b0082   /* back to indigo **/
+  );
+  color:white;
+}
+@keyframes rgb-glow{
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #121212;
+  border-top: 1px solid #333;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #5c6bc0;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff4081;
+}
+
