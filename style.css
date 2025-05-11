@@ -1,169 +1,294 @@
-/* 1. Thhttps://codeshare.io/eme Variables */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+/* Theme Variables */
 :root {
-  --bg: black;
-  --card-bg: #1a1717;
-  --primary: #3f51b5;
-  --secondary: #5c6bc0;
-  --text: white;
-  --accent: #9b59b6;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
-  --gap: 1.5rem;
+  --bg: #3d7e9a; /* Light blue for sky */
+  --card-bg: #a0522d; /* Brown for wood/earth */
+  --primary: #f9f9f9; /* White for text */
+  --secondary: #555555; /* Gray for less important text */
+  --text: #f9f9f9; /* White for main text */
+  --accent: #ffaa00; /* Gold/yellow for highlights */
+  --font-heading: 'Minecraftia', 'monospace'; /* Try this font, or a pixelated monospace */
+  --font-body:'monospace'; /* Monospace for a blocky feel */
+  --gap: 1rem;
 }
 
-/* 2. Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+html {
+  background: url('https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif') no-repeat center center fixed;
+  background-size: cover;
+}
 
-/* 3. Base Styles */
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-body);
-  background-color: var(--bg);
+    background-image: url('https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif');
+    background-size: cover;
   color: var(--text);
   line-height: 1.6;
   padding: var(--gap);
-  max-width: 1500px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 2rem auto;
+  cursor: url('https://wallpapers.com/images/hd/minecraft-diamond-sword-graphic-1qrm03qvv4qg2cvw.png'), auto;
 }
+
 a {
   color: var(--primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 a:hover {
   color: var(--accent);
 }
 
-/* 4. Header */
-header {  
-  display: flex;
-  align-items: center;
-  justify-content: center; /* align items to the left */
-  text-align:center;
-  flex-direction: row; /* change from column to row */
-  background: var(--primary);
-  padding: calc(var(--gap) * 2);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  gap: 1.5rem;
+/* Header */
+header {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: none;
+    background-image: url('https://i.pinimg.com/736x/fe/74/04/fe740428d9021a3257fc8d566495b982.jpg');
+    background-position: center;
+    background-size: contain; /* Try 'contain' first */
+    opacity: 0.9; /* Slightly reduce opacity */
+    color: whitesmoke;
+    padding: calc(var(--gap) * 2);
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
+
 header h1 {
   font-family: var(--font-heading);
-  color: whitesmoke;
-  font-size: 2.5rem;
+  color: var(--primary);
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
 header p {
   font-size: 1.1rem;
   opacity: 0.9;
-  color:aqua; 
+  color: var(--accent)
+  text-shadow: 1px 1px 0 #555555;
+  font-family: var(--font-heading);
 }
 
-/* 5. Section Cards */
-section {
-  background: var(--card-bg);
+/* Hobby Links (Nav) Styling */
+.hobby-links {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  font-family:var(--font-heading)
+}
+
+.hobby-links a {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #704214; /* Darker brown for buttons */
+  color: var(--primary);
+  border: 2px solid #555555;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 2px 2px 0 #555555; /* Blocky shadow */
+}
+
+/* Hover Effect */
+.hobby-links a:hover {
+background: var(--accent);
+  color: #000000; /* Black on hover */
+  box-shadow: none; /* Remove shadow on hover */
+}
+
+.about-links-container {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
   margin-top: var(--gap);
+}
+
+.contact-info {
+  flex-basis: 200px;
+  background: var(--card-bg);
   padding: var(--gap);
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  box-shadow: 4px 4px 0 #555555;
+  border: 2px solid #555555
 }
-section h2 {
+
+.contact-info h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+  border-left: 4px solid var(--accent);
+  padding-left: 0.5rem;
+  text-shadow: 1px 1px 0 #555555;
+}
+
+.contact-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family:var(--font-heading)
+}
+
+.contact-links ul li {
+  margin-bottom: 0;
+}
+
+.contact-links ul li a {
+ color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 0 #555555
+
+}
+
+.contact-links ul li a:hover {
+  color: var(--accent);
+}
+
+/* About Me Section */
+.about-me {
+  flex: 1;
+  background: var(--card-bg);
+  padding: var(--gap);
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 0 #555555; /* Blocky shadow */
+  border: 2px solid #555555;
+}
+.about-links-container {
+    display: flex;
+    align-items: stretch; /* Make items the same height */
+    gap: 2rem;
+    margin-top: var(--gap);
+}
+
+.about-me section h2 {
   font-family: var(--font-heading);
   font-size: 1.75rem;
   margin-bottom: 1rem;
   border-left: 4px solid var(--accent);
   padding-left: 0.5rem;
-  color:purple;
+  color: var(--accent);
+  text-shadow: 1px 1px 0 #555555;
 }
 
-/* 6. Skills & Projects Grid */
-#skills ul,
-#projects ul {
+.about-me section p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 0 #555555;
+}
+
+/* Game Profiles Section */
+#skills {
+  background: var(--card-bg);
+  margin-top: var(--gap);
+  padding: var(--gap);
+  border-radius: 0.5rem;
+ box-shadow: 4px 4px 0 #555555; /* Blocky shadow */
+border: 2px solid #555555; 
+}
+
+#skills h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.5rem;
+  color: var(--accent);
+  text-shadow: 1px 1px 0 #555555;
+}
+
+#skills ul {
   display: flex;
-  flex-wrap: wrap;              /* Flex items wrap */ 
+  flex-wrap: wrap;
   gap: var(--gap);
   list-style: none;
+  padding: 0;
 }
-#skills li,
-#projects li {
-  flex: 1 1 calc(33% - var(--gap));  /* Three columns */ 
-  background: var(--bg);
+
+#skills li {
+  flex: 1 1 calc(33% - var(--gap));
+  background: #704214; /* Darker brown for list items */
   padding: 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--primary);
+  border: 2px solid #555555;
+  box-shadow: 2px 2px 0 #555555; /* Blocky shadow */
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 0 #555555; /* Blocky text shadow */
 }
-#skills li:hover,
-#projects li:hover {
+
+#skills li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: none; 
+  box-shadow:none;
+  color: #000000;
 }
-#projects h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--secondary);
-}
-/* 8. Responsive Breakpoints */
-@media (max-width: 768px) {       /* Tablet */ 
-  #skills li,
-  #projects li {
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  #skills li {
     flex: 1 1 calc(50% - var(--gap));
   }
 }
-@media (max-width: 480px) {       /* Mobile */ 
-  #skills li,
-  #projects li {
+
+@media (max-width: 480px) {
+  #skills li {
     flex: 1 1 100%;
   }
+
   header h1 {
     font-size: 2rem;
   }
+
   section h2 {
     font-size: 1.5rem;
   }
-} 
-.rgb-header{
-  animation: rgb-glow 5s linear infinite;
-  background-size:300%,300%;
-  background-image:linear-gradient(
-    45deg,
-    #4b0082,  /* indigo */
-    #2c3e50,  /* dark blue-gray */
-    #34495e,  /* dark slate */
-    #1abc9c,  /* dark aqua */
-    #16a085,  /* teal */
-    #9b59b6,  /* muted purple */
-    #8e44ad,  /* deep violet */
-    #4b0082   /* back to indigo **/
-  );
-  color:white;
 }
-@keyframes rgb-glow{
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
+/* Footer */
 footer {
-  margin-top: 3rem;
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #121212;
-  border-top: 1px solid #333;
-  color: #bbb;
-  font-size: 0.9rem;
-}
+            text-align: center;
+            margin-top: 40px;
+            padding: 1.5rem;
+            background-color: transperent;
+            color: #bbb;
+            font-size: 1rem;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+            text-shadow: 1px 1px 0 #555555;
+          
+        }
 
-footer a {
-  color: #5c6bc0;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
+        footer a {
+            color: #ffaa00;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
 
-footer a:hover {
-  color: #ff4081;
-}
-
+        footer a:hover {
+            color: #ffffff;
+        }
