@@ -81,7 +81,7 @@ header {
 }
 
 header:hover {
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 header h1 {
@@ -130,7 +130,7 @@ header p {
   /* Black on hover */
   box-shadow: none;
   /* Remove shadow on hover */
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 .about-links-container {
@@ -151,7 +151,7 @@ header p {
 }
 
 .contact-info:hover {
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 .contact-info h2 {
@@ -190,7 +190,7 @@ header p {
 
 .contact-links ul li a:hover {
   color: var(--accent);
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 /* About Me Section */
@@ -206,7 +206,7 @@ header p {
 }
 
 .about-me:hover {
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 .about-links-container {
@@ -246,7 +246,7 @@ header p {
 }
 
 #skills:hover {
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 #skills h2 {
@@ -287,9 +287,8 @@ header p {
 #skills li:hover {
   transform: translateY(-5px);
   box-shadow: none;
-  box-shadow: none;
   color: #000000;
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 /* Responsive Breakpoints */
@@ -329,7 +328,7 @@ footer {
 }
 
 footer:hover {
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 footer a {
@@ -341,5 +340,5 @@ footer a {
 
 footer a:hover {
   color: #ffffff;
-  cursor: url('diamondcursor2.cur'), auto;
+  cursor: url('cursor.cur'), auto;
 }
