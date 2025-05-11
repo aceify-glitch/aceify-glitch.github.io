@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.7;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        header {
+            background-color: #4299e1;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 2px solid #3182ce;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #4299e1;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .course-list li {
+            background-color: #edf2f7;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            border: 1px solid #e2e8f0;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space out title and grade */
+            align-items: center;
+        }
+
+        .course-list li strong {
+            font-size: 1.2rem;
+            color: #2d3748;
+        }
+
+        .course-list li span {
+            font-weight: bold;
+            color: #4299e1;
+        }
+
+
+        .achievement-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .achievement-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .achievement-list li:before {
+            content: "•";
+            color: #4299e1;
+            position: absolute;
+            left: 0;
+        }
+
+        .goal-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .goal-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+         .goal-list li:before {
+            content: "→";
+            color: #4299e1;
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #e2e8f0;
+            color: #333;
+            font-size: 1rem;
+            border-top: 1px solid #cbd5e0;
+            border-radius: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .course-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Academics</h1>
+        <p>A Journey of Learning and Growth</p>
+    </header>
+
+    <main>
+        <section id="coursework">
+            <h2>Coursework</h2>
+            <ul class="course-list">
+                <li><strong>[Course Title 1]</strong> - <span>[Grade/Status]</span></li>
+                <li><strong>[Course Title 2]</strong> - <span>[Grade/Status]</span></li>
+                <li><strong>[Course Title 3]</strong> - <span>[Grade/Status]</span></li>
+                 <li><strong>[Course Title 4]</strong> - <span>[Grade/Status]</span></li>
+                 <li><strong>[Course Title 5]</strong> - <span>[Grade/Status]</span></li>
+                </ul>
+            <p>Here are some of the courses I have taken.  I have particularly enjoyed [Mention a specific course or subject and why].</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>[Achievement 1]</li>
+                <li>[Achievement 2]</li>
+                <li>[Achievement 3]</li>
+                </ul>
+            <p>These are some of the academic achievements I am most proud of.</p>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <ul class="goal-list">
+                <li>[Goal 1]</li>
+                <li>[Goal 2]</li>
+                <li>[Goal 3]</li>
+                </ul>
+            <p>My academic goals include...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 [Your Name]</p>
+    </footer>
+</body>
+</html>
