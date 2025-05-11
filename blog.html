@@ -4,144 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
     <style>
+        /* Minecraft Theme */
         body {
-            font-family: Arial;
-            background-color: black;
+            font-family: 'VT323', monospace; /* Use a pixelated font */
+            background-image: url('https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif');
+            background-size: cover;
             padding: 20px;
-            color: whitesmoke;
+            color: #f9f9f9; /* White text */
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-image:url('https://i.pinimg.com/736x/fe/74/04/fe740428d9021a3257fc8d566495b982.jpg'); /* Wood brown */
+            color: #f9f9f9;
             padding: 15px;
             text-align: center;
+            border-bottom: 4px solid #555555; /* Darker border */
+            box-shadow: 4px 4px 0 #555555; /* Blocky shadow */
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 0 #555555;
+            font-family: 'Minecraftia', monospace;  /* Apply Minecraftia font */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ffaa00; /* Gold/yellow */
+            text-shadow: 1px 1px 0 #555555;
         }
 
         .post {
-            background-color: black;
+            background-color: #a0522d;
             padding: 15px;
             margin-top: 20px;
-            border-radius: 5px;
-            color: whitesmoke;
+            border-radius: 0.5rem;
+            color: #f9f9f9;
+            border: 2px solid #555555;
+            box-shadow: 4px 4px 0 #555555;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: whitesmoke;
-        }
-
-        .rgb-header {
-            animation: rgb-glow 5s linear infinite;
-            background-size: 300%, 300%;
-            background-image: linear-gradient(
-                45deg,
-                #4b0082,  /* indigo */
-                #2c3e50,  /* dark blue-gray */
-                #34495e,  /* dark slate */
-                #1abc9c,  /* dark aqua */
-                #16a085,  /* teal */
-                #9b59b6,  /* muted purple */
-                #8e44ad,  /* deep violet */
-                #4b0082   /* back to indigo **/
-            );
-            color: white;
-        }
-
-        @keyframes rgb-glow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        footer {
-            margin-top: 3rem;
-            padding: 1.5rem;
-            text-align: center;
-            background-color: #121212;
-            border-top: 1px solid #333;
-            color: #bbb;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #5c6bc0;
-            margin: 0 0.5rem;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ff4081;
-        }
-
-        details {
-            margin-top: 20px;
-        }
-
-        summary {
+        .post summary {
             cursor: pointer;
             font-weight: bold;
+            font-size: 1.2rem;
+            color: #f9f9f9;
+            text-shadow: 1px 1px 0 #555555;
         }
 
         .post-content {
             margin-top: 10px;
             padding-left: 15px;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 0 #555555;
         }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 1.5rem;
+            background-color: transperent;
+            color: #bbb;
+            font-size: 1rem;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+            text-shadow: 1px 1px 0 #555555;
+            
+        }
+
+        footer a {
+            color: #ffaa00;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
 
     </style>
 </head>
-<body>
+<body style="background-color: #3d7e9a;">
 
-<!-- Blog Header -->
-<header class="rgb-header">
-    <h1>Welcome to My Blog</h1>
-    <p>By Ace</p>
-</header>
+    <header class="rgb-header">
+        <h1>Welcome to My Blog</h1>
+        <p>By Ace</p>
+    </header>
 
-<!-- Blog Post 1 -->
-<div class="post">
-    <details>
-        <summary>My First Post</summary>
-        <div class="post-content">
-            <p><strong>Date:</strong> May 9, 2025</p>
-            <p>Hey! This is my first blog post. I'm learning HTML and it's super cool so far 😎.</p>
-        </div>
-    </details>
-</div>
+    <div class="post">
+        <details>
+            <summary>My First Post</summary>
+            <div class="post-content">
+                <p><strong>Date:</strong> May 5, 2025</p>
+                <p><h2><strong>Day One at Code Camp: My Digital Adventure Begins!</strong></h2>
+                    First Day at Coding Camp: The School Lab Edition
+Finally started coding camp today! Not exactly glamorous—just our regular school computer lab repurposed for the summer, complete with the same uncomfortable chairs and ancient monitors we use all year.
+The air conditioning barely works, so it's pretty stuffy with twenty kids and their coimputers generating heat. 
+We jumped right into HTMl this morning.
+We're bringing our own lunches and eating at the same place we code, which feels weird. But honestly, it's pretty great spending my days doing something I actually enjoy instead of just sleeping in and playing video games. 
+Tomorrow we start learning about CSS can't wait to see what we build next!
+                
 
-<!-- Blog Post 2 -->
-<div class="post">
-    <details>
-        <summary>Another Cool Thing</summary>
-        <div class="post-content">
-            <p><strong>Date:</strong> May 8, 2025</p>
-            <p>Today I learned how to use CSS to make my blog look better. It’s fun!</p>
-        </div>
-    </details>
-</div>
+                
+                
+                </p>
+            </div>
+        </details>
+    </div>
 
-<!-- Blog Post 3 -->
-<div class="post">
-    <details>
-        <summary>Testing!</summary>
-        <div class="post-content">
-            <p><strong>Date:</strong> May 9, 2025</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia nulla neque voluptatum earum a dolore expedita repudiandae officiis cupiditate eligendi deserunt, nobis, nisi aliquid, dolor eveniet exercitationem incidunt debitis odit dolorum at. Numquam in dolorum aliquam similique facere non architecto sit odio vero delectus, distinctio corporis aspernatur ipsa rem.</p>
-        </div>
-    </details>
-</div>
+    <div class="post">
+        <details>
+            <summary>Another Cool Thing</summary>
+            <div class="post-content">
+                <p><strong>Date:</strong> May 6, 2025</p>
+                <p>
+                
+Making notes is a really important thing, as it allows a person to look back into a certain topic and recollect stuff.
 
-<!-- Footer -->
-<footer>
-    <p>© 2025 Ace — Built with 💻 and ☕</p>
-    <p>
-        <a href="mailto:mrunalrout@gmail.com">Email</a> |
-        <a href="https://github.com/aceify-glitch" target="_blank">GitHub</a> |
-        <a href="https://youtube.com/@swenify" target="_blank">YouTube</a>
-    </p>
-</footer>
+basically jotting down whatever the teacher is saying is not note-making- thats like stenography or whatever the term is for the ppl who sit by the court and transcribe stuff like irl subtitles.
+
+anyways yes so while making notes you need to write down your understanding of the concept- not just the book definitions. only this way, you will be able to recall things easily while revising thru your notes.
+
+you can download n numbers of notes of a certain chapter/topic online, but they will never be as good as your own notes, if you put effort into them, instead of just making them for the sake of it.
+                </p>
+            </div>
+        </details>
+    </div>
+
+    <div class="post">
+        <details>
+            <summary>Testing!</summary>
+            <div class="post-content">
+                <p><strong>Date:</strong> May 9, 2025</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia nulla neque voluptatum earum a dolore expedita repudiandae officiis cupiditate eligendi deserunt, nobis, nisi aliquid, dolor eveniet exercitationem incidunt debitis odit dolorum at. Numquam in dolorum aliquam similique facere non architecto sit odio vero delectus, distinctio corporis aspernatur ipsa rem.</p>
+            </div>
+        </details>
+    </div>
+
+    <footer>
+        <p>© 2025 Ace — Built with 💻 and ☕</p>
+        <p>
+            <a href="mailto:mrunalrout@gmail.com">Email</a> |
+            <a href="https://github.com/aceify-glitch" target="_blank">GitHub</a> |
+            <a href="https://youtube.com/@swenify" target="_blank">YouTube</a> |
+            <a href="https://aceify-glitch.github.io"> Home</a>
+        </p>
+    </footer>
 
 </body>
 </html>
