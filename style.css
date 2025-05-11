@@ -3,20 +3,29 @@
 @import url('https://fonts.cdnfonts.com/css/minecraftia');
 /* Theme Variables */
 :root {
-  --bg: #3d7e9a; /* Light blue for sky */
-  --card-bg: #a0522d; /* Brown for wood/earth */
-  --primary: #f9f9f9; /* White for text */
-  --secondary: #555555; /* Gray for less important text */
-  --text: #f9f9f9; /* White for main text */
-  --accent: #ffaa00; /* Gold/yellow for highlights */
-  --font-heading: 'Minecraftia', 'monospace'; /* Try this font, or a pixelated monospace */
-  --font-body:'monospace'; /* Monospace for a blocky feel */
+  --bg: #3d7e9a;
+  /* Light blue for sky */
+  --card-bg: #a0522d;
+  /* Brown for wood/earth */
+  --primary: #f9f9f9;
+  /* White for text */
+  --secondary: #555555;
+  /* Gray for less important text */
+  --text: #f9f9f9;
+  /* White for main text */
+  --accent: #ffaa00;
+  /* Gold/yellow for highlights */
+  --font-heading: 'Minecraftia', 'monospace';
+  /* Try this font, or a pixelated monospace */
+  --font-body: 'monospace';
+  /* Monospace for a blocky feel */
   --gap: 1rem;
 }
 
 html {
   background: url('https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif') no-repeat center center fixed;
   background-size: cover;
+  cursor: url('cursor.cur'), auto;
 }
 
 /* Base Styles */
@@ -28,14 +37,14 @@ html {
 
 body {
   font-family: var(--font-body);
-    background-image: url('https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif');
-    background-size: cover;
+  background-image: url('https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif');
+  background-size: cover;
   color: var(--text);
   line-height: 1.6;
   padding: var(--gap);
   max-width: 900px;
   margin: 2rem auto;
-  cursor: url('https://wallpapers.com/images/hd/minecraft-diamond-sword-graphic-1qrm03qvv4qg2cvw.png'), auto;
+  cursor: url('cursor.cur'), auto;
 }
 
 a {
@@ -50,22 +59,29 @@ a:hover {
 
 /* Header */
 header {
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    background: none;
-    background-image: url('https://i.pinimg.com/736x/fe/74/04/fe740428d9021a3257fc8d566495b982.jpg');
-    background-position: center;
-    background-size: contain; /* Try 'contain' first */
-    opacity: 0.9; /* Slightly reduce opacity */
-    color: whitesmoke;
-    padding: calc(var(--gap) * 2);
-    border-radius: 0.5rem;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background: none;
+  background-image: url('https://i.pinimg.com/736x/fe/74/04/fe740428d9021a3257fc8d566495b982.jpg');
+  background-position: center;
+  background-size: contain;
+  /* Try 'contain' first */
+  opacity: 0.9;
+  /* Slightly reduce opacity */
+  color: whitesmoke;
+  padding: calc(var(--gap) * 2);
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
+}
+
+header:hover {
+  cursor: url('diamondcursor2.cur'), auto;
 }
 
 header h1 {
@@ -78,7 +94,7 @@ header h1 {
 header p {
   font-size: 1.1rem;
   opacity: 0.9;
-  color: var(--accent)
+  color: var(--accent);
   text-shadow: 1px 1px 0 #555555;
   font-family: var(--font-heading);
 }
@@ -90,26 +106,31 @@ header p {
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 0;
-  font-family:var(--font-heading)
+  font-family: var(--font-heading)
 }
 
 .hobby-links a {
   font-size: 1rem;
   padding: 0.6rem 1.2rem;
-  background: #704214; /* Darker brown for buttons */
+  background: #704214;
+  /* Darker brown for buttons */
   color: var(--primary);
   border: 2px solid #555555;
   border-radius: 0.3rem;
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease;
-  box-shadow: 2px 2px 0 #555555; /* Blocky shadow */
+  box-shadow: 2px 2px 0 #555555;
+  /* Blocky shadow */
+  cursor: url('cursor.cur'), auto; /* Default cursor */
 }
 
-/* Hover Effect */
 .hobby-links a:hover {
-background: var(--accent);
-  color: #000000; /* Black on hover */
-  box-shadow: none; /* Remove shadow on hover */
+  background: var(--accent);
+  color: #000000;
+  /* Black on hover */
+  box-shadow: none;
+  /* Remove shadow on hover */
+  cursor: url('diamondcursor2.cur'), auto;
 }
 
 .about-links-container {
@@ -125,7 +146,12 @@ background: var(--accent);
   padding: var(--gap);
   border-radius: 0.5rem;
   box-shadow: 4px 4px 0 #555555;
-  border: 2px solid #555555
+  border: 2px solid #555555;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
+}
+
+.contact-info:hover {
+  cursor: url('diamondcursor2.cur'), auto;
 }
 
 .contact-info h2 {
@@ -146,7 +172,7 @@ background: var(--accent);
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  font-family:var(--font-heading)
+  font-family: var(--font-heading)
 }
 
 .contact-links ul li {
@@ -154,16 +180,17 @@ background: var(--accent);
 }
 
 .contact-links ul li a {
- color: var(--primary);
+  color: var(--primary);
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1.1rem;
-  text-shadow: 1px 1px 0 #555555
-
+  text-shadow: 1px 1px 0 #555555;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
 }
 
 .contact-links ul li a:hover {
   color: var(--accent);
+  cursor: url('diamondcursor2.cur'), auto;
 }
 
 /* About Me Section */
@@ -172,14 +199,22 @@ background: var(--accent);
   background: var(--card-bg);
   padding: var(--gap);
   border-radius: 0.5rem;
-  box-shadow: 4px 4px 0 #555555; /* Blocky shadow */
+  box-shadow: 4px 4px 0 #555555;
+  /* Blocky shadow */
   border: 2px solid #555555;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
 }
+
+.about-me:hover {
+  cursor: url('diamondcursor2.cur'), auto;
+}
+
 .about-links-container {
-    display: flex;
-    align-items: stretch; /* Make items the same height */
-    gap: 2rem;
-    margin-top: var(--gap);
+  display: flex;
+  align-items: stretch;
+  /* Make items the same height */
+  gap: 2rem;
+  margin-top: var(--gap);
 }
 
 .about-me section h2 {
@@ -204,8 +239,14 @@ background: var(--accent);
   margin-top: var(--gap);
   padding: var(--gap);
   border-radius: 0.5rem;
- box-shadow: 4px 4px 0 #555555; /* Blocky shadow */
-border: 2px solid #555555; 
+  box-shadow: 4px 4px 0 #555555;
+  /* Blocky shadow */
+  border: 2px solid #555555;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
+}
+
+#skills:hover {
+  cursor: url('diamondcursor2.cur'), auto;
 }
 
 #skills h2 {
@@ -228,23 +269,27 @@ border: 2px solid #555555;
 
 #skills li {
   flex: 1 1 calc(33% - var(--gap));
-  background: #704214; /* Darker brown for list items */
+  background: #704214;
+  /* Darker brown for list items */
   padding: 0.75rem;
   border-radius: 0.3rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: var(--primary);
   border: 2px solid #555555;
-  box-shadow: 2px 2px 0 #555555; /* Blocky shadow */
+  box-shadow: 2px 2px 0 #555555;
+  /* Blocky shadow */
   font-size: 1.1rem;
-  text-shadow: 1px 1px 0 #555555; /* Blocky text shadow */
+  text-shadow: 1px 1px 0 #555555;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
 }
 
 #skills li:hover {
   transform: translateY(-5px);
-  box-shadow: none; 
-  box-shadow:none;
+  box-shadow: none;
+  box-shadow: none;
   color: #000000;
+  cursor: url('diamondcursor2.cur'), auto;
 }
 
 /* Responsive Breakpoints */
@@ -270,25 +315,31 @@ border: 2px solid #555555;
 
 /* Footer */
 footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 1.5rem;
-            background-color: transperent;
-            color: #bbb;
-            font-size: 1rem;
-            margin-top: 3rem;
-            padding: 1.5rem;
-            text-align: center;
-            text-shadow: 1px 1px 0 #555555;
-          
-        }
+  text-align: center;
+  margin-top: 40px;
+  padding: 1.5rem;
+  background-color: transparent;
+  color: #bbb;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 0 #555555;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
+}
 
-        footer a {
-            color: #ffaa00;
-            margin: 0 0.5rem;
-            text-decoration: none;
-        }
+footer:hover {
+  cursor: url('diamondcursor2.cur'), auto;
+}
 
-        footer a:hover {
-            color: #ffffff;
-        }
+footer a {
+  color: #ffaa00;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  cursor: url('cursor.cur'), auto; /* Default cursor */
+}
+
+footer a:hover {
+  color: #ffffff;
+  cursor: url('diamondcursor2.cur'), auto;
+}
